@@ -5,28 +5,33 @@
 
 .body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
   background-color: #e2e7ec;
   font-family: "HansKendrick";
 }
 
 .main {
-  margin-top: 90px;
-  width: 1120px;
-  height: 1100px;
+
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
-  background: transparent;
+  width: 1120px;
+  height: 1100px;
+  margin-top: 90px;
+
 }
 
 .main__item {
+  height: 540px;
+  width: 360px;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  height: 540px;
-  width: 360px;
+
 }
 
 .item__img {
@@ -34,8 +39,10 @@
 }
 
 .main__first-item {
+  display: flex;
+  height: 540px;
   width: 740px;
-  background: url("../images/first-img.jpg") no-repeat center top / cover;
+  background: url("../images/first-img.jpg");
 }
 
 .first-item__text {
@@ -92,7 +99,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1120px;
   margin-top: 80px;
   margin-bottom: 95px;
   align-items: center;
